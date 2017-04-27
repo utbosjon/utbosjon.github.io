@@ -17,12 +17,6 @@ p{
     line-height: 1.7em;
 }
 
-img{
-    
-    width: 20%;
-    height: 20%;
-    margin-left: 600px;
-    
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -90,17 +84,18 @@ ul{
 }
 
 #logo{ 
-    width: 825px;
+    width: 900px;
     position: relative;
-    height: 168px;
-    background: #025587 url(../images/BrightHotellEmblem) no-repeat;
+    height: 180px;
+    background: #2A1B0A url(../images/BrightHotellEmblem) no-repeat;
+    text-align: center;
 }
 
 #menubar{ 
-    width: 877px;
+    width: 900px;
     height: 72px;
     padding: 0;
-    background: #29415D;
+    color: #61380B;
 } 
 
 ul#menu, ul#menu li{ 
@@ -111,25 +106,26 @@ ul#menu, ul#menu li{
 
 ul#menu li{ 
     list-style: none;
+    color: #61380B;
 }
 
 ul#menu li a{ 
     letter-spacing: 0.1em;
     font: normal 100% 'lucida sans unicode', arial, sans-serif;
     display: block; 
-    float: left; 
+    float: right; 
     height: 37px;
-    padding: 29px 26px 6px 26px;
+    padding: 29px 60px 6px 61px;
     text-align: center;
     color: #FFF;
     text-transform: uppercase;
     text-decoration: none;
-    background: transparent;
+    background: #61380B;
 } 
 
 ul#menu li a:hover, ul#menu li.active a, ul#menu li.active a:hover{ 
     color: #FFF;
-    background: #1C2C3E;
+    background: #61380B;
 }
 
 #site_content{ 
