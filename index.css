@@ -1,135 +1,148 @@
-html{
+html
+{ 
     height: 100%;
 }
 
-*
-{ margin: 0;
-  padding: 0;}
-
-body{ 
+body
+{ 
     font: normal .80em 'trebuchet ms', arial, sans-serif;
     background: #F0EFE2;
     color: #777;
 }
 
-p{ 
+p
+{ 
     padding: 0 0 20px 0;
     line-height: 1.7em;
 }
 
+img
+{ 
+    border: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 
+{ 
     font: normal 175% 'century gothic', arial, sans-serif;
     color: #43423F;
     margin: 0 0 15px 0;
-    padding: 15px 0 5px 0;}
-
-h2{ 
-    font: normal 175% 'century gothic', arial, sans-serif;
-    color: #A4AA04; 
+    padding: 15px 0 5px 0;
 }
 
-h4, h5, h6{ 
+h2
+{ 
+    font: normal 175% 'century gothic', arial, sans-serif;
+    color: #A4AA04;
+}
+
+h4, h5, h6
+{ 
     margin: 0;
     padding: 0 0 5px 0;
     font: normal 120% arial, sans-serif;
     color: #A4AA04;
 }
 
-h5, h6{ 
+h5, h6
+{ 
     font: italic 95% arial, sans-serif;
     padding: 0 0 15px 0;
-    color: #000;}
+    color: #000;
+}
 
-h6{ 
+h6
+{ 
     color: #362C20;
 }
 
-a, a:hover{ 
+a, a:hover
+{ 
     outline: none;
     text-decoration: none;
-    color: #1293EE;
+    color: #025587;
 }
 
-.left{ 
+.left
+{ 
     float: left;
     width: auto;
     margin-right: 10px;
 }
 
-.right{ 
+.right
+{ 
     float: right; 
     width: auto;
     margin-left: 10px;
 }
 
-.center{ 
+.center
+{ 
     display: block;
     text-align: center;
     margin: 20px auto;
 }
 
-ul{ 
-    margin: 2px 0 22px 17px;
-}
-
-#main, #logo, #menubar, #site_content, #footer{ 
+#main, #logo, #menubar, #site_content, #footer
+{ 
     margin-left: auto; 
     margin-right: auto;
-}
-
-#header{ 
-  height: 240px;
-}
-
-#logo{ 
     width: 900px;
-    position: relative;
-    height: 180px;
-    background: #2A1B0A url(../images/BrightHotellEmblem) no-repeat;
-    text-align: center;
 }
 
-#menubar{ 
+#header
+{ 
+    background: #025587;
+    height: 240px;
+    width: 900px;
+}
+
+#logo
+{ 
+    width: 825px;
+    position: relative;
+    text-align: center;
+    height: 168px;
+    background: #025587 url(../images/logga.png) no-repeat;
+}
+
+#menubar
+{ 
     width: 900px;
     height: 72px;
     padding: 0;
-    color: #61380B;
-    
+    background: #000033;
 } 
 
-ul#menu, ul#menu li{ 
+ul#menu, ul#menu li
+{ 
     float: left;
     margin: 0; 
     padding: 0;
 }
 
-ul#menu li{ 
+ul#menu li
+{ 
     list-style: none;
-    color: #61380B;
 }
 
-ul#menu li a{ 
+ul#menu li a
+{ 
     letter-spacing: 0.1em;
     font: normal 100% 'lucida sans unicode', arial, sans-serif;
     display: block; 
-    float: right; 
+    float: left; 
     height: 37px;
-    padding: 29px 60px 6px 61px;
+    padding: 29px 60.5px 6px 60.5px;
     text-align: center;
     color: #FFF;
     text-transform: uppercase;
     text-decoration: none;
-    background: #61380B;
+    background: transparent;
 } 
 
-ul#menu li a:hover, ul#menu li.active a, ul#menu li.active a:hover{ 
-    color: #FFF;
-    background: #61380B;
-}
-
-#site_content{ 
+#site_content
+{ 
     width: 837px;
     overflow: hidden;
     margin: 0 auto 0 auto;
@@ -137,31 +150,35 @@ ul#menu li a:hover, ul#menu li.active a, ul#menu li.active a:hover{
     background: #FFF url(../images/sidan.png) repeat-y;
 } 
 
-.sidebar{ 
+.sidebar
+{ 
     float: right;
     width: 190px;
-    padding: 0 15px 10px 15px;
-    
+    padding: 0 15px 20px 15px;
 }
 
-#content{ 
+#content
+{ 
     text-align: left;
     width: 595px;
     padding: 0;
 }
 
-#content ul{ 
+#content ul
+{ 
     margin: 2px 0 22px 0px;
 }
 
-#content ul li{ 
+#content ul li
+{ 
     list-style-type: none;
     margin: 0 0 6px 0; 
     padding: 0 0 4px 25px;
     line-height: 1.5em;
 }
 
-#footer{ 
+#footer
+{ 
     width: 878px;
     font: normal 100% 'lucida sans unicode', arial, sans-serif;
     height: 33px;
@@ -173,31 +190,120 @@ ul#menu li a:hover, ul#menu li.active a, ul#menu li.active a:hover{
     letter-spacing: 0.1em;
 }
 
-@media (max-width: 765px){
-    #menubar{
-        width: 50%;
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Position the "next button" to the right */
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media (max-width: 850px){
+    #menubar
+    {
+        width: 100%;
+        text-align: center;
     }
-    ul#menu li a,ul#menu li{
+
+    ul#menu li a,ul#menu li
+    {
         float: none;
+        background-color: #000033;
+        width: 125%; 
+        height: 70px;
+        text-align: center;
     }
-    #logo{ 
+    #logo
+    { 
+        width: 234%;
+    }
+    #site_content
+    { 
+        width: 84%;
+        text-align: center;
+    }
+    #footer
+    {
+        width: 100%;
+        text-align: center;
+    }
+    #content
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    #iframemap
+    {
         width: 100%;
     }
-    #site_content{ 
-    width: 100%;
+    .sidebar
+    {
+        width:100%;
+        float: none;
+        text-align: center;
     }
-    #footer{
+    #slider figure
+    {
         width: 100%;
     }
-    #content{
-        width: 100%;
+    #header
+    {
+        width: 37.25%;
+        margin-left: 25px;
     }
-    
-    #iframemap{
-        width: 100%;
-    }
-    .sidebar{
-        width: 40%;
+    #main
+    {
+        width: 100%;   
     }
 }
+
+
+
 

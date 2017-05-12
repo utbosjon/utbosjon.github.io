@@ -10,8 +10,9 @@
         <div id="main">
             <div id="header">
                 <div id="logo">
-                    <img src="Image/BrightHotellEmblem.png" alt="Logga">
+                    <a href="index.html"><img src="Image/BrightHotellEmblem.png" alt="Logga"></a>
                 </div>
+
                 <div id="menubar">
                     <ul id="menu">
                         <li class="active"><a href="index.html">Start</a></li>
@@ -48,24 +49,69 @@
                 </div>
                 <div id="content">
                     <h1>
-                        Välkommen
-                    </h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus ipsum sed semper eleifend. Fusce nisi arcu, varius in mattis eget, mattis non tortor. Aliquam et libero nibh. Nullam id risus vel ante euismod blandit. Proin vestibulum ac nunc ut ornare. Duis nec lectus venenatis, commodo mauris ac, aliquet sem. Nam non eleifend ante. Nulla non consectetur sapien. Vestibulum imperdiet, elit nec tempor posuere, massa orci consectetur tellus, at sodales purus mauris quis erat. Fusce luctus turpis sed ex aliquet tempus. In molestie a dui quis imperdiet. Cras commodo ipsum libero, eget volutpat nisi dapibus in. Praesent lectus nunc, ultricies a justo id, placerat egestas dui.
+                        <h3>
+                            Välkommen
+                        </h3>
 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus ipsum sed semper eleifend. Fusce nisi arcu, varius in mattis eget, mattis non tortor. Aliquam et libero nibh. Nullam id risus vel ante euismod blandit. Proin vestibulum ac nunc ut ornare. Duis nec lectus venenatis, commodo mauris ac, aliquet sem. Nam non eleifend ante. Nulla non consectetur sapien. Vestibulum imperdiet, elit nec tempor posuere, massa orci consectetur tellus, at sodales purus mauris quis erat. Fusce luctus turpis sed ex aliquet tempus. In molestie a dui quis imperdiet. Cras commodo ipsum libero, eget volutpat nisi dapibus in. Praesent lectus nunc, ultricies a justo id, placerat egestas dui.</p>
 
-                        <br/><br/>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus ipsum sed semper eleifend. Fusce nisi arcu, varius in mattis eget, mattis non tortor. Aliquam et libero nibh. Nullam id risus vel ante euismod blandit. Proin vestibulum ac nunc ut ornare. Duis nec lectus venenatis, commodo mauris ac, aliquet sem. Nam non eleifend ante. Nulla non consectetur sapien. Vestibulum imperdiet, elit nec tempor posuere, massa orci consectetur tellus, at sodales purus mauris quis erat. Fusce luctus turpis sed ex aliquet tempus. In molestie a dui quis imperdiet. Cras commodo ipsum libero, eget volutpat nisi dapibus in. Praesent lectus nunc, ultricies a justo id, placerat egestas dui.
+                        <div class="slideshow-container">
 
+                        <div class="mySlides fade">
+                            <img src="Image/BrightHotellUtsida.jpg" style="width:90%">
+                        </div>
 
-                        <br/><br/>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus ipsum sed semper eleifend. Fusce nisi arcu, varius in mattis eget, mattis non tortor. Aliquam et libero nibh. Nullam id risus vel ante euismod blandit. Proin vestibulum ac nunc ut ornare. Duis nec lectus venenatis, commodo mauris ac, aliquet sem. Nam non eleifend ante. Nulla non consectetur sapien. Vestibulum imperdiet, elit nec tempor posuere, massa orci consectetur tellus, at sodales purus mauris quis erat. Fusce luctus turpis sed ex aliquet tempus. In molestie a dui quis imperdiet. Cras commodo ipsum libero, eget volutpat nisi dapibus in. Praesent lectus nunc, ultricies a justo id, placerat egestas dui.
+                        <div class="mySlides fade">
+                            <img src="Image/BrightHotellGym.jpg" style="width:90%">
+                        </div>
 
+                        <div class="mySlides fade">
+                            <img src="Image/BrightHotellPadelbana.jpg" style="width:90%">
+                        </div>
 
-                    </p>
-                    <img src="Image/BrightHotellUtsida.jpg" alt="Framsidan av hotellet" style= "width:90%; height:100%;" />
+                        </div>
+                    <br>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+
+                    <script>
+                        var slideIndex = 1;
+                        showSlides(slideIndex);
+
+                        function plusSlides(n) {
+                            showSlides(slideIndex += n);
+                        }
+
+                        function currentSlide(n) {
+                            showSlides(slideIndex = n);
+                        }
+
+                        function showSlides(n) {
+                            var i;
+                            var slides = document.getElementsByClassName("mySlides");
+                            var dots = document.getElementsByClassName("dot");
+                            if (n > slides.length) {slideIndex = 1}    
+                            if (n < 1) {slideIndex = slides.length}
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";  
+                            }
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex-1].style.display = "block";  
+                            dots[slideIndex-1].className += " active";
+                        }
+                    </script>
+
                 </div>
             </div>
         </div>
+            <footer>
+                <p>COPYRIGHT 2017 © Bright Hotell | Polis Larssons väg KLAGSHAMN | DESIGNAT AV Oskar Jönsson</p>
+            </footer>
     </body>
 </html>
