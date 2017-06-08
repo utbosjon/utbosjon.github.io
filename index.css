@@ -55,11 +55,11 @@ h6
     color: #362C20;
 }
 
-a, a:hover
+#menu a:hover
 { 
     outline: none;
     text-decoration: none;
-    color: #025587;
+    background-color: aqua;
 }
 
 .left
@@ -88,6 +88,10 @@ a, a:hover
     margin-left: auto; 
     margin-right: auto;
     width: 900px;
+}
+
+#footer{
+    text-align: center;
 }
 
 #header
@@ -119,6 +123,7 @@ ul#menu, ul#menu li
     float: left;
     margin: 0; 
     padding: 0;
+    background: #000033;
 }
 
 ul#menu li
@@ -132,7 +137,7 @@ ul#menu li a
     font: normal 100% 'lucida sans unicode', arial, sans-serif;
     display: block; 
     float: left; 
-    height: 37px;
+    height: 72px;
     padding: 29px 60.5px 6px 60.5px;
     text-align: center;
     color: #FFF;
@@ -140,6 +145,12 @@ ul#menu li a
     text-decoration: none;
     background: transparent;
 } 
+
+#manu li a:hover, #menu li.active a, #menu li.active a:hover{
+    color: #FFF;
+    background-color: aqua;
+    
+}
 
 #site_content
 { 
@@ -177,18 +188,6 @@ ul#menu li a
     line-height: 1.5em;
 }
 
-#footer
-{ 
-    width: 878px;
-    font: normal 100% 'lucida sans unicode', arial, sans-serif;
-    height: 33px;
-    padding: 24px 0 5px 0;
-    text-align: center; 
-    background: #29425E;
-    color: #FFF;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-}
 
 * {box-sizing:border-box}
 
@@ -303,7 +302,3 @@ ul#menu li a
         width: 100%;   
     }
 }
-
-
-
-

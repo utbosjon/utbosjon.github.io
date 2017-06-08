@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Bright Hotell</title>
         <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="icon" type="image" href="image/favicon.png" />
     </head>
 
     <body>
@@ -57,61 +58,63 @@
 
                         <div class="slideshow-container">
 
-                        <div class="mySlides fade">
-                            <img src="Image/BrightHotellUtsida.jpg" style="width:90%">
+                            <div class="mySlides fade">
+                                <img src="Image/BrightHotellUtsida.jpg" style="width:90%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="Image/BrightHotellGym.jpg" style="width:90%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="Image/BrightHotellPadelbana.jpg" style="width:90%">
+                            </div>
+
+                        </div>
+                        <br>
+
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span> 
+                            <span class="dot" onclick="currentSlide(2)"></span> 
+                            <span class="dot" onclick="currentSlide(3)"></span>
                         </div>
 
-                        <div class="mySlides fade">
-                            <img src="Image/BrightHotellGym.jpg" style="width:90%">
-                        </div>
+                        <script>
+                            var slideIndex = 1;
+                            showSlides(slideIndex);
 
-                        <div class="mySlides fade">
-                            <img src="Image/BrightHotellPadelbana.jpg" style="width:90%">
-                        </div>
-
-                        </div>
-                    <br>
-
-                    <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span> 
-                        <span class="dot" onclick="currentSlide(2)"></span> 
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                    </div>
-
-                    <script>
-                        var slideIndex = 1;
-                        showSlides(slideIndex);
-
-                        function plusSlides(n) {
-                            showSlides(slideIndex += n);
-                        }
-
-                        function currentSlide(n) {
-                            showSlides(slideIndex = n);
-                        }
-
-                        function showSlides(n) {
-                            var i;
-                            var slides = document.getElementsByClassName("mySlides");
-                            var dots = document.getElementsByClassName("dot");
-                            if (n > slides.length) {slideIndex = 1}    
-                            if (n < 1) {slideIndex = slides.length}
-                            for (i = 0; i < slides.length; i++) {
-                                slides[i].style.display = "none";  
+                            function plusSlides(n) {
+                                showSlides(slideIndex += n);
                             }
-                            for (i = 0; i < dots.length; i++) {
-                                dots[i].className = dots[i].className.replace(" active", "");
-                            }
-                            slides[slideIndex-1].style.display = "block";  
-                            dots[slideIndex-1].className += " active";
-                        }
-                    </script>
 
+                            function currentSlide(n) {
+                                showSlides(slideIndex = n);
+                            }
+
+                            function showSlides(n) {
+                                var i;
+                                var slides = document.getElementsByClassName("mySlides");
+                                var dots = document.getElementsByClassName("dot");
+                                if (n > slides.length) {slideIndex = 1}    
+                                if (n < 1) {slideIndex = slides.length}
+                                for (i = 0; i < slides.length; i++) {
+                                    slides[i].style.display = "none";  
+                                }
+                                for (i = 0; i < dots.length; i++) {
+                                    dots[i].className = dots[i].className.replace(" active", "");
+                                }
+                                slides[slideIndex-1].style.display = "block";  
+                                dots[slideIndex-1].className += " active";
+                            }
+                        </script>
+
+                        </div>
                 </div>
             </div>
-        </div>
-            <footer>
-                <p>COPYRIGHT 2017 © Bright Hotell | Polis Larssons väg KLAGSHAMN | DESIGNAT AV Oskar Jönsson</p>
-            </footer>
-    </body>
-</html>
+            <div id="footer">
+                <footer>
+                    <p>COPYRIGHT 2017 © Bright Hotell | Polis Larssons väg KLAGSHAMN | DESIGNAT AV Oskar Jönsson</p>
+                </footer>
+            </div>
+            </body>
+        </html>
